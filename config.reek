@@ -1,0 +1,63 @@
+---
+### Generic smell configuration
+
+IrresponsibleModule:
+  enabled: false
+UnusedPrivateMethod:
+  enabled: false
+NilCheck:
+  enabled: false
+
+"app/controllers":
+  TooManyStatements:
+    max_statements: 10
+  NestedIterators:
+    max_allowed_nesting: 2
+  UnusedPrivateMethod:
+    enabled: false
+  UncommunicativeModuleName:
+    enabled: false
+  InstanceVariableAssumption:
+    enabled: false
+  ManualDispatch:
+    enabled: false
+"app/helpers":
+  UtilityFunction:
+    enabled: false
+  FeatureEnvy:
+    enabled: false
+  ManualDispatch:
+    enabled: false
+"app/models":
+  Attribute:
+    enabled: false
+"app/serializer":
+  RepeatedConditional:
+    enabled: false
+"test/support":
+  UtilityFunction:
+    enabled: false
+  FeatureEnvy:
+    enabled: false
+  TooManyStatements:
+    max_statements: 10
+  InstanceVariableAssumption:
+    enabled: false
+  TooManyMethods:
+    max_methods: 20
+  ManualDispatch:
+    enabled: false
+  DataClump:
+    enabled: false
+"test/requests":
+  UncommunicativeModuleName:
+    enabled: false
+
+### Excluding directories
+
+# Directories below will not be scanned at all
+exclude_paths:
+  - db/migrate
+  - lib/generators
+  - lib/rails/generators
+  - lib/populate
