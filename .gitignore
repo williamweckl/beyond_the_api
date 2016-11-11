@@ -16,7 +16,4 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-coverage/*
-
-public/modalities/*
-public/users/*
+.gem
