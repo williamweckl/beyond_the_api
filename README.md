@@ -11,7 +11,7 @@ The tests are based in minitest.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'beyond_the_api_test_helpers', require: false, group: :test
+gem 'beyond_the_api', require: false, group: :test
 ```
 
 And then execute:
@@ -20,13 +20,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install beyond_the_api_test_helpers
+    $ gem install beyond_the_api
 
 ## Installation
 
 Include in your test_helper.rb:
 ```ruby
-require 'beyond_the_api_test_helpers'
+require 'beyond_the_api'
 ```
 
 ## Usage
@@ -102,7 +102,7 @@ TODO: helpers descriptions
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/williamweckl/beyond_the_api_test_helpers.
+Bug reports and pull requests are welcome on GitHub at https://github.com/williamweckl/beyond_the_api.
 
 ## License
 
