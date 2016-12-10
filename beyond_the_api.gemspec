@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'active_model_serializers', '~> 0.10.3'
   spec.add_dependency 'activesupport', '>= 4.2', '< 5.1'
   spec.add_dependency 'will_paginate', '~> 3.1.5'
+  spec.add_dependency 'versionist', '~> 1.5.0'
 
   spec.add_development_dependency 'bundler', '~> 1.11'
   spec.add_development_dependency 'rake', '~> 10.0'
