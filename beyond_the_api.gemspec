@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'active_model_serializers', '~> 0.10.3'
+  spec.add_dependency 'active_model_serializers', '~> 0.10.4'
   spec.add_dependency 'activesupport', '>= 4.2', '< 5.1'
   spec.add_dependency 'will_paginate', '~> 3.1.5'
   spec.add_dependency 'versionist', '~> 1.5.0'
