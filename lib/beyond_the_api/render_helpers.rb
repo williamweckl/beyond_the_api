@@ -3,6 +3,7 @@ module BeyondTheApi
     extend ActiveSupport::Concern
 
     included do
+      include ::BeyondTheApi::Base
       include ::BeyondTheApi::IndexRenderHelpers
       include ::BeyondTheApi::ShowRenderHelpers
       before_action :set_meta

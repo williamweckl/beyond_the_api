@@ -3,6 +3,7 @@ module BeyondTheApi
     def render_json_serializer(object, options = {})
       render_params = { json: object, current_user: current_user, meta: @meta,
                         status: (options[:status] || :ok) }
+      add_fields_and_include_to_render_options(render_params)
 
       render render_params.merge(render_json_serializer_aditional_params(options))
     end

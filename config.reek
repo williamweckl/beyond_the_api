@@ -8,29 +8,25 @@ UnusedPrivateMethod:
 NilCheck:
   enabled: false
 
-"app/controllers":
-  TooManyStatements:
-    max_statements: 10
-  NestedIterators:
-    max_allowed_nesting: 2
-  UnusedPrivateMethod:
-    enabled: false
-  UncommunicativeModuleName:
-    enabled: false
-  InstanceVariableAssumption:
-    enabled: false
-  ManualDispatch:
-    enabled: false
-"app/helpers":
+"lib/beyond_the_api":
   UtilityFunction:
     enabled: false
   FeatureEnvy:
     enabled: false
   ManualDispatch:
     enabled: false
-"app/models":
-  Attribute:
-    enabled: false
+    TooManyStatements:
+      max_statements: 10
+    NestedIterators:
+      max_allowed_nesting: 2
+    UnusedPrivateMethod:
+      enabled: false
+    UncommunicativeModuleName:
+      enabled: false
+    InstanceVariableAssumption:
+      enabled: false
+    ManualDispatch:
+      enabled: false
 "app/serializer":
   RepeatedConditional:
     enabled: false

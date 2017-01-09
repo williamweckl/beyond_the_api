@@ -20,7 +20,7 @@ module BeyondTheApi
       params_to_render = { json: @list, meta: @meta, current_user: current_user }
       serializer = options[:serializer]
       params_to_render[:each_serializer] = serializer if serializer
-      params_to_render
+      add_fields_and_include_to_render_options(params_to_render)
     end
 
     def render_json_list_enum(list, name, options = {})

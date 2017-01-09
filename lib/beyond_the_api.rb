@@ -1,6 +1,7 @@
 require 'active_model_serializers'
 require 'will_paginate'
 require 'versionist'
+require 'beyond_the_api/base'
 require 'beyond_the_api/render_helpers'
 require 'beyond_the_api/index_render_helpers'
 require 'beyond_the_api/show_render_helpers'
